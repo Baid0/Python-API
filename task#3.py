@@ -14,7 +14,7 @@ print("ქვეყნის სახელი: ", description.get("country_nam
 print("საქვეყნო კოდი არის: ", description.get("country_code"))
 print("არის თუ არა ევროპის ნაწილი : ", description.get("is_eu"))
 print("სატელეფონო კოდი : ", description.get("calling_code"))
-with open ('data.json', 'w') as file:
+with open ('description.json', 'w') as file:
     json.dump(description, file, indent=4)
 file.close()
 
